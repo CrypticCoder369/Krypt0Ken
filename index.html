@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State of the Union Survey</title>
+    <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+      <h1 id="title">State of the Union Survey</h1>
+<p>This survey is to determine the public's overall sentiment on the state of America.</p>
+<form id="survey-form">
+  <fieldset>
+
+    <label for="name-label">Name: 
+        <input id="name-label" type="text" placeholder="enter your name" required /></label><br>
+    <label for="email-label">Email: 
+        <input id="email-label" type="email" placeholder="enter your email address" required /></label><br>
+    <label for="age-label">Age: (18-100) 
+        <input id="age-label" type="number" min="18" max="100" pattern="[18-100]" placeholder="enter your age" required /><br>
+    
+    <label for="dropdown"> What is your Party Affiliation?
+        <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Democrat</option>
+            <option value="2">Republican</option>
+            <option value="3">Libertarian</option>
+            <option value="4">Anarcist</option>
+        </select>
+
+        <legend>Are you a Registered Voter? (required)</legend>
+    <label for="voter-yes"><input id="voter-yes" type="radio"
+        name="voter" checked />Yes </label>
+    <label for="voter-no"><input id="voter-no" type="radio"
+        name="voter" />No </label><br>
+   
+    <label for="voting-record" name="voting-record" /> Select the U.S. President(s) that you have voted for: (select all that apply)<br>
+        <input type="checkbox" value="Joe Biden">Joe Biden </label><br>
+        <input type="checkbox" value="Donald J. Trump">Donald J. Trump </label><br>
+        <input type="checkbox" value="Barrack H. Obama">Barrack H. Obama </label><br>
+        <input type="checkbox" value="George W. Bush">George W. Bush </label><br>
+        <input type="checkbox" value="Bill Clinton">Bill Clinton </label><br>
+        <input type="checkbox" value="George H.W. Bush">George H.W. Bush </label><br>
+        </label>
+    
+    <label for="comment">What are your thoughts on the current living conditons in America:</label>
+        <textarea id="comment" rows="3" cols="25" placeholder="your opinion?"></textarea>
+    
+    <input type="submit">
+    </fieldset>
+    </form>
